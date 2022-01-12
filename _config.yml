@@ -1,0 +1,65 @@
+# Site
+name: "Naamu의 선물 블로그"
+title: "Naamu의 선물 블로그"
+description: "선물 또는 좋은 상품을 고르고 골라서 소개하는 블로그 입니다"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: /
+url: "https://naamu.github.io"
+google_analytics: 'G-B0001X23MT'
+disqus: 'https-naamu-github-io-market'
+mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  Naamu:
+    name: Naamu
+    display_name: Naamu
+    avatar: 'assets/images/avatar.png'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: naamu.blog@gmail.com
+    web: https://naamu.github.io/market/
+    twitter:
+    description: "고르기 어려운 선물과 상품, 좋은 선물과 상품만 찾아서, 모두에게 행복과 쉬운 결정에 도움을 드리고자 운영하는 블로거 입니다."
+
+# Plugins
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 12
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
