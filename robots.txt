@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://naamu.github.io/sitemap.xml
